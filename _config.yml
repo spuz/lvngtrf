@@ -20,5 +20,6 @@ exclude: [
   "Gruntfile.js",
   "LICENSE",
   "node_modules",
-  "package.json"
+  "package.json",
+  "assets/scss"
 ]
