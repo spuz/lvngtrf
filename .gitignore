@@ -2,3 +2,4 @@ _site/
 .sass-cache/
 css
 node_modules
+assets/css
