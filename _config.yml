@@ -23,3 +23,6 @@ exclude: [
   "package.json",
   "assets/scss"
 ]
+
+# Set environment
+production: false
