@@ -28,6 +28,7 @@ module.exports = function(grunt) {
           cssDir: 'assets/css',
           environment: 'development',
           outputStyle: 'expanded',
+          require: 'breakpoint',
           noLineComments: false,
           watch: true
         }
