@@ -1,0 +1,37 @@
+/* Susy Setup
+--------------------*/
+$susy: (
+  columns: 4,
+  gutters: .25,
+  debug: (
+    image: show,
+    color: rgba(#F00, .25),
+    output: background,
+  )
+);
+
+
+/* Breakpoints
+--------------------*/
+
+$baby-bear: max-width 40em;
+$mama-bear: 40em;
+$papa-bear: min-widht 65em;
+
+
+/* Typography
+--------------------*/
+
+$serif:             Georgia, serif;
+$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$base-font-size:    16px;
+$base-line-height:  24px;
+
+/* Colors
+--------------------*/
+
+$text-color:   #3D3D3D;
+$light-color:  #666;
+$accent-color: #4178BE;
+$bg-color:     #FDFDFD;

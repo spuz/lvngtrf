@@ -1,5 +1,17 @@
-$color: yellow;
+@import "compass";
+@import "normalize";
+@import "susy";
+@import "breakpoint";
+
+@import "variables";
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
 
 body {
-  color: $color;
+  font-family: $sans-serif;
+  color: $text-color;
+  background-color: $bg-color;
 }
+
