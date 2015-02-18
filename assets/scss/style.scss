@@ -4,14 +4,12 @@
 @import "breakpoint";
 
 @import "variables";
-
-html {
-  -webkit-font-smoothing: antialiased;
-}
+@import "typography";
 
 body {
   font-family: $sans-serif;
   color: $text-color;
   background-color: $bg-color;
+  @include container;
 }
 
