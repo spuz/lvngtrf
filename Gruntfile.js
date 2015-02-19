@@ -39,6 +39,7 @@ module.exports = function(grunt) {
           cssDir: 'assets/css',
           environment: 'production',
           outputStyle: 'compressed',
+          require: 'breakpoint',
           noLineComments: true,
           watch: false
         }
