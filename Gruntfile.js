@@ -52,6 +52,7 @@ module.exports = function(grunt) {
       },
       jekyll: {
         files: [
+          '_layouts/*.html',
           '_includes/*.html',
           '_posts/*.markdown',
           '_posts/*.md',
