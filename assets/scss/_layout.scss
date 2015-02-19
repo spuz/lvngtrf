@@ -1,0 +1,24 @@
+.site-header {
+  text-align: center;
+  @include leader(3);
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+  }
+
+}
+
+
+.wrapper {
+  @include container();
+  margin: 0 gutter() / 2;
+}
+
+
+.full-width {
+  text-align: center;
+  margin-left:  -1 * gutter();
+  margin-right: -1 * gutter();
+  @include trailer();
+}

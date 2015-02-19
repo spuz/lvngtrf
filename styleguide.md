@@ -4,7 +4,10 @@ title: Styleguide
 permalink: /styleguide/
 ---
 
-# This is the Styleguide
+<div class="full-width">
+  <!-- <img src="https://farm8.staticflickr.com/7481/15845299541_895ee06471_b.jpg" /> -->
+  <img src="https://farm8.staticflickr.com/7534/15661316119_c8bde1258b_b.jpg" />
+</div>
 
 <h2>Franz Kafka</h2>
 <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines <a href="http://virtual-identity.com">Morgens</a> verhaftet. „Wie ein Hund!“ sagte er, es war, als sollte die Scham ihn überleben.</p>

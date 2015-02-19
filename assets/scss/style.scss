@@ -5,11 +5,15 @@
 
 @import "variables";
 @import "typography";
+@import "layout";
 
 body {
   font-family: $sans-serif;
   color: $text-color;
   background-color: $bg-color;
-  @include container;
+}
+
+img {
+  max-width: 100%;
 }
 

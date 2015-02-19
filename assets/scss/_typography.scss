@@ -17,3 +17,8 @@ ol {
   @include leader(0);
   @include trailer(1);
 }
+
+h1 {
+  font-family: $serif;
+  @include adjust-font-size-to(18px);
+}
