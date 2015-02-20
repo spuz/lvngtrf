@@ -1,6 +1,24 @@
+.page-content {
+  @include container();
+  margin-left: 1em;
+  margin-right: 1em;
+  @include breakpoint($mama-bear) {
+    @include container(60em 12);
+  }
+}
+
+
+.wrapper {
+  @include breakpoint($mama-bear) {
+    @include span(8 of 12);
+    @include pre(2 of 12);
+  }
+}
+
+
 .site-header {
   text-align: center;
-  @include leader(3);
+  @include leader(2);
 
   a {
     text-decoration: none;
@@ -13,22 +31,21 @@
 }
 
 
-.wrapper {
-  @include container();
-  margin: 0 gutter() / 2;
+.full-width {
+  text-align: center;
+  margin-left:  -1em;
+  margin-right: -1em;
+  @include trailer();
   @include breakpoint($mama-bear) {
-    @include container(63em 12);
+    @include container(63em);
   }
 }
 
 
-.full-width {
+footer {
   text-align: center;
-  margin-left:  -1 * gutter();
-  margin-right: -1 * gutter();
-  @include trailer();
-  @include breakpoint($mama-bear) {
-    margin-left: 0;
-    margin-right: 0;
-  }
+  @include leader(3);
+  
+  p  { @include adjust-font-size-to(12px); }
+
 }

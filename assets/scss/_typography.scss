@@ -1,8 +1,31 @@
 @include establish-baseline;
 
-html {
-  -webkit-font-smoothing: antialiased;
+// Disable FOUT
+//----------------------------
+//
+// see also http://help.typekit.com/customer/portal/articles/6852-controlling-the-flash-of-unstyled-text-or-fout-using-font-events
+
+.wf-loading {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  ul,
+  ol {
+    visibility: hidden;
+  }
+
 }
+
+
+
+// Default bottom margin
+//----------------------------
 
 h1,
 h2,
@@ -18,7 +41,31 @@ ol {
   @include trailer(1);
 }
 
-h1 {
+
+
+// Elements that use serif font
+//------------------------------
+
+h1,
+h2,
+h3 {
+  font-family: $serif;
+}
+
+
+
+// Use in header only
+//------------------------------
+
+h6 {
   font-family: $serif;
   @include adjust-font-size-to(18px);
 }
+
+
+
+// Font sizing
+//------------------------------
+
+h1 { @include adjust-font-size-to(18px); }
+p  { @include adjust-font-size-to(16px); }

@@ -1,10 +1,10 @@
 ---
-layout: post
-title:  "Atlantic Ocean"
-date:   2015-02-20 14:55:00
+layout:    post
+title:     "Atlantic Ocean"
+date:      2015-02-20 14:55:00
 permalink: /atlantic-ocean/
+image:     https://farm5.staticflickr.com/4074/4859905774_bd6507a134_b.jpg
+alt:       "A picture of the Atlantic Ocean showing sky and water."
 ---
-
-<div class="full-width"><img src="https://farm5.staticflickr.com/4074/4859905774_bd6507a134_b.jpg" /></div>
 
 This is a picture from the Atlantic Ocean taken on a ship near the cost of Cape Code, Massachusetts.

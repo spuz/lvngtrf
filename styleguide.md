@@ -20,11 +20,21 @@ permalink: /styleguide/
 <p>„Es ist ein eigentümlicher Apparat“, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch <a href="http://knallgrau.at/">wohlbekannten Apparat</a>. Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab.</p>
 <ul>
 <li>Geboren: 3. Juli 1883 in Prag</li>
-<li>Gestorben: 3. Juni 1924 in Klosterneuburg</li>
+<li>Gestorben: 3. Juni 1924 in Klosterneuburg
+  <ul>
+    <li>Foo</li>
+    <li>Bar</li>
+  </ul>
+</li>
 </ul>
 <p>In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen. Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. „Wie ein Hund! “ sagte er, es war, als sollte die Scham ihn überleben.</p>
 <ol>
 <li>Der Process</li>
-<li>Das Schloss</li>
+<li>Das Schloss
+  <ul>
+    <li>Foo</li>
+    <li>Bar</li>
+  </ul>
+</li>
 <li>Ein Hungerkünstler</li>
 </ol>
