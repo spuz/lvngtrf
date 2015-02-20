@@ -10,29 +10,38 @@ module.exports = function(grunt) {
 
     jekyll: {
       build: {
-        options: 'config.yml'
+        options: {
+          config: '_config.yml'
+        }
+      },
+      production: {
+        options: {
+          config: '_PROD.config.yml, _config.yml'
+        }
       }
     },
 
     compass: {
-      dist: {
-        options: {
-          sassDir: 'sass',
-          cssDir: 'css',
-          environment: 'production',
-          outputStyle: 'compressed',
-          noLineComments: true,
-          watch: false
-        }
-      },
       dev: {
         options: {
-          sassDir: 'sass',
-          cssDir: 'css',
+          sassDir: 'assets/scss',
+          cssDir: 'assets/css',
           environment: 'development',
           outputStyle: 'expanded',
+          require: 'breakpoint',
           noLineComments: false,
           watch: true
+        }
+      },
+      production: {
+        options: {
+          sassDir: 'assets/scss',
+          cssDir: 'assets/css',
+          environment: 'production',
+          outputStyle: 'compressed',
+          require: 'breakpoint',
+          noLineComments: true,
+          watch: false
         }
       }
     },
@@ -43,14 +52,16 @@ module.exports = function(grunt) {
       },
       jekyll: {
         files: [
+          '_layouts/*.html',
           '_includes/*.html',
           '_posts/*.markdown',
           '_posts/*.md',
           'index.html',
           '_config.yml',
-          'css/*.css'
+          'assets/css/*.css',
+          '*.md',
         ],
-        tasks: ['jekyll']
+        tasks: ['jekyll:build']
       }
     },
 
@@ -61,7 +72,8 @@ module.exports = function(grunt) {
           'watch'
         ],
         options: {
-          logConcurrentOutput: true
+          logConcurrentOutput: true,
+          livereload: true
         }
       }
     }
@@ -72,8 +84,12 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-jekyll');
   // grunt.loadNpmTasks('grunt-contrib-watch');
 
+  grunt.registerTask('prod', [
+    'compass:production',
+    'jekyll:production'
+  ]);
+
   grunt.registerTask('default', [
-    'concurrent:target',
-    'compass'
+    'concurrent:target'
   ]);
 }
