@@ -1,13 +1,43 @@
-  <nav id="pagination">
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-      <a href="/" title="Previous Page">&laquo; Previous</a>
-      {% else %}
-      <a href="/page/{{ paginator.previous_page }}/" title="Previous Page">&laquo; Previous</a>
-      {% endif %}
-    {% endif %}
+{% strip %}
+{% comment %}comment{% endcomment %}
+{% if page.is_post %}
+
+<nav class="pagination">
+  <ul>
+  {% if page.previous.url %}
+    <li><a href="{{ page.previous.url }}" class="" title="{{ page.previous.title }}"><= {{ page.previous.title }}</a></li>
+
+  {% endif %}
+
+  {% if page.next.url %}
+    <li><a href="{{ page.next.url }}" class="" title="{{ page.next.title }}">{{ page.next.title }} =></a></li>
+  {% endif %}
+  </ul>
+</nav>
+
+{% else %}
+
+<nav class="pagination">
+  <ul>
+  {% if paginator.previous_page %}
+
+  {% if paginator.previous_page == 1 %}
+    <li><a href="/" title="Previous Page">&laquo; Previous</a></li>
+
+  {% else %}
+
+    <li><a href="/page/{{ paginator.previous_page }}/" title="Previous Page">&laquo; Previous 2</a></li>
+
+  {% endif %}
+
+  {% endif %}
     
-    {% if paginator.next_page %} 
-    <a href="/page/{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a>
-    {% endif %} 
-  </nav>
+  {% if paginator.next_page %} 
+    <li><a href="/page/{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a></li>
+  {% endif %}
+  </ul>
+</nav>
+
+{% endif %}
+
+{% endstrip %}
