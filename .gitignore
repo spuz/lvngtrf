@@ -1,5 +1,10 @@
-_site/
-.sass-cache/
+_site
+_site-DEV
+_site-PROD
+.sass-cache
+.grunt
 css
 node_modules
 assets/css
+s3_website.yml
+
