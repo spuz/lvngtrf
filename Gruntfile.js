@@ -11,12 +11,14 @@ module.exports = function(grunt) {
     jekyll: {
       build: {
         options: {
+          dest: '_site-DEV',
           config: '_config.yml'
         }
       },
       production: {
         options: {
-          config: '_PROD.config.yml, _config.yml'
+          dest: '_site-PROD',
+          config: '_config.yml,_PROD.config.yml'
         }
       }
     },

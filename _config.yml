@@ -1,12 +1,15 @@
+# Set environment
+environment: development
+
 # Site settings
-title: Leben in Armut - DEV
+title: Leben in Armut
 email: benke@ultrasmall.at
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ultrasmall.dev" # the base hostname & protocol for your site
+url: "http://lebeninarmut.dev" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -21,12 +24,26 @@ exclude: [
   "LICENSE",
   "node_modules",
   "package.json",
-  "assets/scss"
+  "assets/scss",
+  "s3_website.yml",
+  "README.md",
+  "styleguide.md"
 ]
-
-# Set environment
-production: false
 
 # Pagination
 paginate: 1
 paginate_path: "page/:num"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      is_post: true
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      is_page: true
