@@ -4,11 +4,14 @@ $susy: (
   columns: 4,
   gutters: .25,
   debug: (
-    image: hide,
+//    image: hide,
 //    image: show,
-//     image: show-baseline,
+//    image: show-baseline,
     color: rgba(#F00, .25),
     output: background,
+  ),
+  use-custom: (
+    clearfix: false,
   )
 );
 
@@ -18,7 +21,7 @@ $susy: (
 
 $baby-bear:        max-width 40em;
 $mama-bear:        40em;
-$papa-bear:        min-widht 65em;
+$papa-bear:        min-width 65em;
 
 
 /* Typography
@@ -33,7 +36,10 @@ $base-line-height: 24px;
 /* Colors
 --------------------*/
 
-$text-color:       #3E3E3E;
-$light-color:      #666;
+$dark-color:       #3E3E3E;
+$light-color:      #FBFBFB;
+
+$text-color:       $dark-color;
+$bg-color:         $light-color;
 $accent-color:     #4178BE;
-$bg-color:         #FBFBFB;
+

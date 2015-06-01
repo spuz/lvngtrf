@@ -60,6 +60,7 @@ h3 {
 h6 {
   font-family: $serif;
   @include adjust-font-size-to(18px);
+  @include rhythm(0,2);
 }
 
 
