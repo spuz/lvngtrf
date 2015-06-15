@@ -3,6 +3,7 @@ _site-DEV
 _site-PROD
 .sass-cache
 .grunt
+.DS_Store
 css
 node_modules
 assets/css
