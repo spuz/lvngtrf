@@ -3,7 +3,7 @@ layout:    post
 title:     "The dead people of Orr’s Island"
 date:      2015-02-20 21:55:00
 permalink: /the-dead-people-of-orrs-island/
-image:     https://farm5.staticflickr.com/4099/4904008575_c4209e672e_b.jpg
+image:     https://c1.staticflickr.com/5/4099/4904008575_f6ecd7391e_o.jpg
 alt:       "A picture showing tombstones on a graveyard in Maine"
 ---
 
