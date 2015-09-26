@@ -101,6 +101,3 @@ DEPENDENCIES
   jekyll
   s3_website
   susy
-
-BUNDLED WITH
-   1.10.4
