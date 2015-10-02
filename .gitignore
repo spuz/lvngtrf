@@ -7,4 +7,4 @@ css
 node_modules
 assets/css
 s3_website.yml
-
+.DS_Store
