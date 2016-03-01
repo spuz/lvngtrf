@@ -1,0 +1,49 @@
+{% strip %}
+
+{% comment %}
+  Pagination either for individual posts or for pages
+{% endcomment %}
+
+{% if page.is_post %}
+
+<!-- begin post navigation -->
+<nav class="pagination">
+  <ul>
+  {% if page.previous.url %}
+    <li><a href="{{ page.previous.url }}" class="button prev" title="{{ page.previous.title }}">{{ page.previous.title }}</a></li>
+
+  {% endif %}
+
+  {% if page.next.url %}
+    <li><a href="{{ page.next.url }}" class="button next" title="{{ page.next.title }}">{{ page.next.title }}</a></li>
+  {% endif %}
+  </ul>
+</nav><!-- /end post navigation -->
+
+{% else %}
+
+<!-- begin page navigation -->
+<nav class="pagination">
+  <ul>
+  {% if paginator.previous_page %}
+
+  {% if paginator.previous_page == 1 %}
+    <li><a href="/" class="button prev" title="Previous Page">Previous</a></li>
+
+  {% else %}
+
+    <li><a href="/page/{{ paginator.previous_page }}/" class="button prev" title="Previous Page">Previous Page</a></li>
+
+  {% endif %}
+
+  {% endif %}
+    
+  {% if paginator.next_page %} 
+    <li><a href="/page/{{ paginator.next_page }}/" class="button next" title="Next Page">Next Page</a></li>
+  {% endif %}
+  </ul>
+</nav><!-- /end page navigation -->
+
+{% endif %}
+
+{% endstrip %}

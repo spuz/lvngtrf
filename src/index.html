@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {% strip %}
+  <ul class="post-list">
+  {% for post in paginator.posts %}
+    <li>
+      {% if post.image %}
+        <a class="post-link full-width" href="{{ post.url | prepend: site.baseurl }}">{% include post-image.html %}</a>
+      {% else %}
+
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+  {% endstrip %}
+{% include pagination.html %}
+</div>

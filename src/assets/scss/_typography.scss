@@ -1,0 +1,72 @@
+@include establish-baseline;
+
+// Disable FOUT
+//----------------------------
+//
+// see also http://help.typekit.com/customer/portal/articles/6852-controlling-the-flash-of-unstyled-text-or-fout-using-font-events
+
+.wf-loading {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  ul,
+  ol {
+    visibility: hidden;
+  }
+
+}
+
+
+
+// Default bottom margin
+//----------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+ul,
+ol {
+  @include leader(0);
+  @include trailer(1);
+}
+
+
+
+// Elements that use serif font
+//------------------------------
+
+h1,
+h2,
+h3 {
+  font-family: $serif;
+}
+
+
+
+// Use in header only
+//------------------------------
+
+h6 {
+  font-family: $serif;
+  @include adjust-font-size-to(18px);
+  @include rhythm(0,2);
+}
+
+
+
+// Font sizing
+//------------------------------
+
+h1 { @include adjust-font-size-to(18px); }
+p  { @include adjust-font-size-to(16px); }

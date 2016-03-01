@@ -1,0 +1,71 @@
+.page-content {
+  @include container();
+  margin-left: 1em;
+  margin-right: 1em;
+  background-color: $bg-color;
+  @include breakpoint($mama-bear) {
+    @include container(60em 12);
+  }
+}
+
+
+
+
+.wrapper {
+  @include breakpoint($mama-bear) {
+    @include span(8 of 12);
+    @include pre(2 of 12);
+  }
+}
+
+
+.site-header {
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+    @include transition-property(color);
+    @include transition-duration(0.25s);
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+}
+
+
+.full-width {
+  text-align: center;
+  margin-left:  -1em;
+  margin-right: -1em;
+  @include trailer();
+  @include breakpoint($mama-bear) {
+    @include container(63em);
+  }
+}
+
+
+footer {
+  @include span(4 of 4);
+  text-align: center;
+  @include leader(3);
+
+  p { @include adjust-font-size-to(12px); }
+
+}
+
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    text-align: center;
+    @include trailer(3);
+  }
+}
+
+.post-link {
+  display: block;
+}

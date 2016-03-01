@@ -1,2 +1,3 @@
 # Set environment
-production: true
+environment: production
+url: lebeninarmut.at

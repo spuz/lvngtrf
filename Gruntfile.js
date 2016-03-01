@@ -11,12 +11,14 @@ module.exports = function(grunt) {
     jekyll: {
       build: {
         options: {
+          dest: 'dev',
           config: '_config.yml'
         }
       },
       production: {
         options: {
-          config: '_PROD.config.yml, _config.yml'
+          dest: 'dist',
+          config: '_config.yml,_PROD.config.yml'
         }
       }
     },
@@ -24,8 +26,8 @@ module.exports = function(grunt) {
     compass: {
       dev: {
         options: {
-          sassDir: 'assets/scss',
-          cssDir: 'assets/css',
+          sassDir: 'src/assets/scss',
+          cssDir: 'src/assets/css',
           environment: 'development',
           outputStyle: 'expanded',
           require: 'breakpoint',
@@ -35,8 +37,8 @@ module.exports = function(grunt) {
       },
       production: {
         options: {
-          sassDir: 'assets/scss',
-          cssDir: 'assets/css',
+          sassDir: 'src/assets/scss',
+          cssDir: 'src/assets/css',
           environment: 'production',
           outputStyle: 'compressed',
           require: 'breakpoint',
@@ -52,14 +54,15 @@ module.exports = function(grunt) {
       },
       jekyll: {
         files: [
-          '_layouts/*.html',
-          '_includes/*.html',
-          '_posts/*.markdown',
-          '_posts/*.md',
-          'index.html',
-          '_config.yml',
-          'assets/css/*.css',
-          '*.md',
+          'src/_layouts/*.html',
+          'src/_includes/*.html',
+          'src/_posts/*.markdown',
+          'src/_posts/*.md',
+          'src/index.html',
+          'src/_config.yml',
+          'src/assets/css/*.css',
+          'src/*.md',
+          'src/images'
         ],
         tasks: ['jekyll:build']
       }

@@ -1,0 +1,11 @@
+.pagination {
+  ul {
+    @include horizontal-list-container;
+  }
+  li {
+    @include horizontal-list-item;
+    &:first-child {
+      margin-right: 1em;
+    }
+  }
+}
