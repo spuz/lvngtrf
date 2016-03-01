@@ -1,10 +1,8 @@
-_site
-_site-DEV
-_site-PROD
 .sass-cache
 .grunt
 css
+dev
 node_modules
-assets/css
+src/assets/css
 s3_website.yml
 .DS_Store
