@@ -3,6 +3,7 @@
 css
 dev
 node_modules
+src/images/
 src/assets/css
 s3_website.yml
 .DS_Store
