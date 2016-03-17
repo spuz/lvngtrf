@@ -1,7 +1,8 @@
-@import "compass";
-@import "normalize";
-@import "susy";
-@import "breakpoint";
+
+@import "../../../node_modules/compass-mixins/lib/compass";
+//@import "../../../node_modules/normalize-scss/sass/normalize";
+@import "../../../node_modules/susy/sass/susy";
+@import "../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
 
 @import "variables";
 @import "typography";
@@ -14,6 +15,7 @@ body {
   font-family: $sans-serif;
   color: $text-color;
   background-color: $bg-color;
+  @include container();
 }
 
 img {
