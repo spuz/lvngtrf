@@ -33,6 +33,8 @@ exclude: [
   "styleguide.md"
 ]
 
+gems: [jekyll-paginate]
+
 # Pagination
 paginate: 1
 paginate_path: "page/:num"
