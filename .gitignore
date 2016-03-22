@@ -6,5 +6,6 @@ node_modules
 src/images/
 src/assets/css
 src/assets/maps
+src/.jekyll-metadata
 s3_website.yml
 .DS_Store
