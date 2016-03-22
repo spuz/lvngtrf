@@ -1,11 +1,12 @@
-_site
-_site-DEV
-_site-PROD
 .sass-cache
 .grunt
 .DS_Store
 css
+dev
 node_modules
-assets/css
+src/images/
+src/assets/css
+src/assets/maps
+src/.jekyll-metadata
 s3_website.yml
-
+.DS_Store
