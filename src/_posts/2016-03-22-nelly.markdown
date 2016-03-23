@@ -1,0 +1,13 @@
+---
+layout:    post
+title:     "Nelly"
+date:      2016-03-22 21:55:00
+permalink: /nelly/
+image:     /images/2016/03/0099-1288-Berggasse.jpg
+image2x:   /images/2016/03/0099-1288-Berggasse@2x.jpg
+thumb:     /images/2016/03/thumb-0099-1288-Berggasse.jpg
+thumb2x:   /images/2016/03/thumb-0099-1288-Berggasse@2x.jpg
+alt:       "Nelly wearing a pot"
+---
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi harum, veniam quis amet molestiae aperiam omnis repellat. Illum at adipisci provident nihil repellendus, debitis esse optio cumque! Possimus, nesciunt labore.
