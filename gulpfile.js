@@ -58,10 +58,11 @@ gulp.task('serve', ['sass', 'jekyll-build'], function() {
         ],
         ['sass']);
     gulp.watch([
-            'src/*.html',
+            'src/**/*.html',
             'src/_layouts/*.html',
             'src/_includes/*.html',
-            'src/_posts/*'
+            'src/_posts/*',
+            'src/images/**/*'
         ],
         ['jekyll-rebuild']);
 });
