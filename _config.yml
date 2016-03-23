@@ -52,3 +52,9 @@ defaults:
       type: "pages"
     values:
       is_page: true
+  -
+    scope:
+      path: "archive"
+      type: "pages"
+    values:
+      is_archive: true

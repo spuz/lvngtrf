@@ -1,9 +1,26 @@
-{% if page.is_page %}
+{% comment %}
+  If the image is rendered on an archive page
+  use it as a background image.
+{% endcomment %}
 
-<img src="{{ post.image }}" srcset="{{ post.image }} 1x, {{ post.image2x }} 2x" alt="{{ post.alt }}" />
+{% if page.is_archive %}
+<div style="width: 320px; height: 320px; background-image: url({{ post.thumb }});">Item</div>
 
-{% else %}
 
+{% comment %}
+  If the image is rendered in a post
+  use this snippet.
+{% endcomment %}
+
+{% elsif page.is_post %}
 <img src="{{ page.image }}" srcset="{{ page.image }} 1x, {{ page.image2x }} 2x" alt="{{ page.alt }}" />
 
+
+{% comment %}
+  If the image is rendered on a page
+  use this snippet.
+{% endcomment %}
+
+{% elsif page.is_page %}
+<img src="{{ post.image }}" srcset="{{ post.image }} 1x, {{ post.image2x }} 2x" alt="{{ post.alt }}" />
 {% endif %}
