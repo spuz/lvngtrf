@@ -62,7 +62,8 @@ gulp.task('serve', ['sass', 'jekyll-build'], function() {
             'src/_layouts/*.html',
             'src/_includes/*.html',
             'src/_posts/*',
-            'src/images/**/*'
+            'src/images/**/*',
+            'src/*.md'
         ],
         ['jekyll-rebuild']);
 });
