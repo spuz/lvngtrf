@@ -37,7 +37,6 @@
   text-align: center;
   margin-left: gutters() * -1;
   margin-right: gutters() * -1;
-  @include trailer();
   @include breakpoint($mama-bear) {
     margin-left: 0;
     margin-right: 0;
