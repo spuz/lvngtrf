@@ -12,10 +12,14 @@
 @import "syntax-highlighting";
 
 body {
+  margin: 0;
   font-family: $sans-serif;
   color: $text-color;
   background-color: $bg-color;
-  @include container();
+  @include breakpoint($mama-bear) {
+    margin-left: gutters();
+    margin-right: gutters();
+  }
 }
 
 img {
