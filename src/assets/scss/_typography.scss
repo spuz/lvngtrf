@@ -1,5 +1,3 @@
-@include establish-baseline;
-
 // Disable FOUT
 //----------------------------
 //
@@ -37,8 +35,7 @@ p,
 blockquote,
 ul,
 ol {
-  @include leader(0);
-  @include trailer(1);
+
 }
 
 
@@ -59,8 +56,6 @@ h3 {
 
 h6 {
   font-family: $serif;
-  @include adjust-font-size-to(18px);
-  @include rhythm(0,2);
 }
 
 
@@ -68,5 +63,5 @@ h6 {
 // Font sizing
 //------------------------------
 
-h1 { @include adjust-font-size-to(18px); }
-p  { @include adjust-font-size-to(16px); }
+h1 {  }
+p  {  }

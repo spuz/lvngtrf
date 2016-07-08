@@ -25,8 +25,6 @@
   a {
     text-decoration: none;
     color: $text-color;
-    @include transition-property(color);
-    @include transition-duration(0.25s);
     &:hover {
       color: $accent-color;
     }
@@ -50,9 +48,9 @@
 footer {
   @include span(4 of 4);
   text-align: center;
-  @include leader(3);
 
-  p { @include adjust-font-size-to(12px); }
+
+  p { }
 
 }
 
@@ -63,7 +61,6 @@ footer {
   padding: 0;
   li {
     text-align: center;
-    @include trailer(3);
   }
 }
 
