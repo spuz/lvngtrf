@@ -3,6 +3,7 @@ var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 var sourcemaps  = require('gulp-sourcemaps');
 var cp          = require('child_process');
+var bourbon     = require('bourbon').includePaths;
 
 
 // see https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/blob/master/gulpfile.js
@@ -33,12 +34,11 @@ gulp.task('sass', function() {
         .pipe(sourcemaps.init())
         .pipe(sass({
             includePaths: [
-                'node_modules/compass-mixins/lib/compass',
                 'node_modules/susy/sass/susy',
                 'node_modules/breakpoint-sass/stylesheets/breakpoint',
                 'node_modules/support-for/sass',
                 'node_modules/normalize-scss/sass/normalize'
-            ]
+            ].concat(bourbon)
         }).on('error', sass.logError))
         .pipe(sourcemaps.write('../maps'))
         .pipe(gulp.dest('src/assets/css'))
@@ -54,7 +54,7 @@ gulp.task('serve', ['sass', 'jekyll-build'], function() {
     });
 
     gulp.watch([
-            'src/assets/scss/*.scss'
+            'src/assets/scss/**/*.scss'
         ],
         ['sass']);
     gulp.watch([
