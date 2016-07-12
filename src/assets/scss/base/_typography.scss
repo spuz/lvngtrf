@@ -1,0 +1,72 @@
+body  {
+  font-family: $sans-serif;
+  line-height:  1;
+}
+
+// Disable FOUT
+//----------------------------
+//
+// see also http://help.typekit.com/customer/portal/articles/6852-controlling-the-flash-of-unstyled-text-or-fout-using-font-events
+
+// .wf-loading {
+
+//   h1,
+//   h2,
+//   h3,
+//   h4,
+//   h5,
+//   h6,
+//   p,
+//   blockquote,
+//   ul,
+//   ol {
+//     visibility: hidden;
+//   }
+
+// }
+
+
+
+// Default bottom margin
+//----------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+ul,
+ol {
+
+}
+
+
+
+// Elements that use serif font
+//------------------------------
+
+h1,
+h2,
+h3 {
+  font-family: $serif;
+}
+
+
+
+// Use in header only
+//------------------------------
+
+h6 {
+  font-family: $serif;
+}
+
+
+
+// Font sizing
+//------------------------------
+
+h1 {  }
+p  {  }

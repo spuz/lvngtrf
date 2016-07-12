@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.page {
+  @include container();
+  padding-left: gutter();
+  padding-right: gutter();
+  background-color: $bg-color;
+  @include show-grid(show-columns 6);
+  @include breakpoint($mama-bear) {
+    @include container(60em 12);
+    @include show-grid(show-columns 12);
+  }
+}
+
+
+
+
+.post__wrapper {
+  @include breakpoint($mama-bear) {
+    @include span(8 of 12);
+    @include pre(2 of 12);
+  }
+}
+
+
+.page-header {
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+}
+
+
+
+footer {
+  @include span(4 of 4);
+  text-align: center;
+
+
+  p { }
+
+}
+
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    text-align: center;
+  }
+}
+
+.post-link {
+  display: block;
+}
+
+

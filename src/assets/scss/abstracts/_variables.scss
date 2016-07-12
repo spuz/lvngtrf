@@ -1,0 +1,50 @@
+/* Susy Setup
+--------------------*/
+$susy: (
+  columns: 12,
+  gutters: .25,
+  use-custom: (
+    clearfix: false,
+  )
+);
+
+// $susy: (
+//     math: fluid,
+//     columns: 12,
+//     column-width: 60px,
+//     gutters: 20px/60px,
+//     use-custom: (
+//         background-image: false
+//     )
+// );
+
+
+/* Breakpoints
+--------------------*/
+
+$baby-bear:        max-width 40em;
+$mama-bear:        40em;
+$papa-bear:        min-width 65em;
+
+
+/* Typography
+--------------------*/
+
+$serif:            "adobe-caslon-pro", Merriweather, Georgia, serif;
+$sans-serif:       "ff-dagny-web-pro", Roboto, Helvetica, Arial, sans-serif;
+
+$base-font-size:   16px;
+$base-line-height: 24px;
+
+/* Colors
+--------------------*/
+
+$dark-color:       #3E3E3E;
+$light-color:      #FBFBFB;
+
+$text-color:       $dark-color;
+$bg-color:         $light-color;
+$accent-color:     #4178BE;
+
+$darkest-grey:     #030303;
+

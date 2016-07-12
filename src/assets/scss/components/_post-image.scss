@@ -1,0 +1,16 @@
+.figure  {
+  margin: 0;
+  text-align: center;
+  &__image {
+    max-height: 100vh;
+  }
+}
+
+.full-width {
+  margin-left: gutter() * -1;
+  margin-right: gutter() * -1;
+  @include breakpoint($mama-bear) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
