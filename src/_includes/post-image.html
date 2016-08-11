@@ -4,7 +4,7 @@
 {% endcomment %}
 
 {% if page.is_archive %}
-<div style="width: 320px; height: 320px; background-image: url({{ post.thumb }});">Item</div>
+<div style="width: 320px; height: 320px; background-size: cover; background-image: url({{ post.thumb }});">Item</div>
 
 
 {% comment %}
@@ -13,8 +13,10 @@
 {% endcomment %}
 
 {% elsif page.is_post %}
-<img src="{{ page.image }}" srcset="{{ page.image }} 1x, {{ page.image2x }} 2x" alt="{{ page.alt }}" />
-
+<figure class="figure">
+  <img class="figure__image" src="{{ page.image }}" srcset="{{ page.image }} 1x, {{ page.image2x }} 2x" alt="{{ page.alt }}" />
+  <figcaption class="figure__caption">{{ page.caption }}</figcaption>
+</figure>
 
 {% comment %}
   If the image is rendered on a page
@@ -22,5 +24,7 @@
 {% endcomment %}
 
 {% elsif page.is_page %}
-<img src="{{ post.image }}" srcset="{{ post.image }} 1x, {{ post.image2x }} 2x" alt="{{ post.alt }}" />
+<figure class="figure">
+  <img class="figure__image" src="{{ post.image }}" srcset="{{ post.image }} 1x, {{ post.image2x }} 2x" alt="{{ post.alt }}" />
+<figcaption class="figure__caption">{{ post.caption }}</figcaption>
 {% endif %}

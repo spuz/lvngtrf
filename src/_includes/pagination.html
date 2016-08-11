@@ -4,46 +4,31 @@
   Pagination either for individual posts or for pages
 {% endcomment %}
 
+<nav class="pagination">
 {% if page.is_post %}
-
-<!-- begin post navigation -->
-<nav class="pagination">
-  <ul>
+  <!-- begin post pagination -->
+  <ul class="pagination__menu">
   {% if page.previous.url %}
-    <li><a href="{{ page.previous.url }}" class="button prev" title="{{ page.previous.title }}">{{ page.previous.title }}</a></li>
-
+    <li class="pagination__item"><a href="{{ page.previous.url }}" class="pagination__link pagination__link--prev" title="{{ page.previous.title }}">{{ page.previous.title }}</a></li>
   {% endif %}
-
   {% if page.next.url %}
-    <li><a href="{{ page.next.url }}" class="button next" title="{{ page.next.title }}">{{ page.next.title }}</a></li>
+    <li class="pagination__item"><a href="{{ page.next.url }}" class="pagination__link pagination__link--next" title="{{ page.next.title }}">{{ page.next.title }}</a></li>
   {% endif %}
-  </ul>
-</nav><!-- /end post navigation -->
-
+  </ul><!-- end post pagination -->
 {% else %}
-
-<!-- begin page navigation -->
-<nav class="pagination">
-  <ul>
+  <!-- begin page navigation -->
+  <ul class="pagination__menu">
   {% if paginator.previous_page %}
-
-  {% if paginator.previous_page == 1 %}
-    <li><a href="/" class="button prev" title="Previous Page">Previous</a></li>
-
-  {% else %}
-
-    <li><a href="/page/{{ paginator.previous_page }}/" class="button prev" title="Previous Page">Previous Page</a></li>
-
+    {% if paginator.previous_page == 1 %}
+      <li><a href="/" class="pagination__link pagination__link--prev" title="Previous Page">Previous</a></li>
+    {% else %}
+      <li><a href="/page/{{ paginator.previous_page }}/" class="pagination__link pagination__link--prev" title="Previous Page">Previous Page</a></li>
+    {% endif %}
   {% endif %}
-
-  {% endif %}
-    
   {% if paginator.next_page %} 
-    <li><a href="/page/{{ paginator.next_page }}/" class="button next" title="Next Page">Next Page</a></li>
+    <li class="pagination__item"><a href="/page/{{ paginator.next_page }}/" class="pagination__link pagination__link--next" title="Next Page">Next Page</a></li>
   {% endif %}
-  </ul>
-</nav><!-- /end page navigation -->
-
+  </ul><!-- end page pagination -->
 {% endif %}
-
+</nav>
 {% endstrip %}

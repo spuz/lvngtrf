@@ -1,26 +1,20 @@
 ---
 layout: default
 ---
-<div class="post">
-
+<article class="post">
 {% if page.image %}
-  <div class="full-width">
+  <div class="post__image full-width">
     {% include post-image.html %}
   </div>
 {% endif %}
-
-  <div class="wrapper">
-    <header class="post-header">
-      <h1 class="post-title">{{ page.title }}</h1>
-     {% comment %} <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>{% endcomment %}
+  <div class="post__wrapper">
+    <header class="post__header">
+      <h1 class="post__title">{{ page.title }}</h1>
+      {% comment %}<p class="post__meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>{% endcomment %}
     </header>
-
-    <article class="post-content">
+    <div class="post__content">
       {{ content }}
-    </article>
-{% include pagination.html %}
+    </div>
   </div>
-
-
-
-</div>
+</article>
+{% include pagination.html %}
