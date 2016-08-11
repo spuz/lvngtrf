@@ -1,0 +1,13 @@
+---
+layout:    post
+title:     "Traunsee"
+date:      2016-07-08 12:00:00
+permalink: /traunsee/
+image:     /images/2016/07/0092-1125-Altmuenster.jpg
+image2x:   /images/2016/07/0092-1125-Altmuenster@2x.jpg
+thumb:     /images/2016/07/0092-1125-Altmuenster.jpg
+thumb2x:   /images/2016/07/0092-1125-Altmuenster@2x.jpg
+alt:       "The feet of a sunbather"
+---
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi harum, veniam quis amet molestiae aperiam omnis repellat. Illum at adipisci provident nihil repellendus, debitis esse optio cumque! Possimus, nesciunt labore.
