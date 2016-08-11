@@ -28,3 +28,27 @@
 //   max-width: 100%;
 // }
 
+
+body:before {
+    content: "breakpoint";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: yellow;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    font-family: $sans-serif;
+    z-index: 1000;
+    /*    @include rotate(270deg);
+        @include transform-origin(0, 0, 0);*/
+
+    @include breakpoint($baby-bear) {
+        content: "Baby Bear";
+    }
+    @include breakpoint($mama-bear) {
+        content: "Mama Bear";
+    }
+    @include breakpoint($papa-bear) {
+        content: "Papa Bear";
+    }
+}
