@@ -12,12 +12,9 @@ body {
   @include show-grid(show-columns 6);
   @include breakpoint($mama-bear) {
     @include container(60em 12);
-    @include show-grid(show-columns 12);
+    @include show-grid(show 12);
   }
 }
-
-
-
 
 .post__wrapper {
   @include breakpoint($mama-bear) {

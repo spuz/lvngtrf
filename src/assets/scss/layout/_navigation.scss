@@ -1,0 +1,20 @@
+.mainnav {
+  @include breakpoint($mama-bear) {
+    @include span(4 of 12 last);
+  }
+}
+
+.mainnav__menu {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  @include breakpoint($mama-bear) {
+    justify-content: space-between;
+  }
+}
+
+.mainnav__item {
+
+}

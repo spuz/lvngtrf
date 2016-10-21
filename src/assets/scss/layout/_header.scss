@@ -1,0 +1,8 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  @include breakpoint($mama-bear) {
+    @include span(8 of 12);
+    justify-content: space-between;
+  }
+}
