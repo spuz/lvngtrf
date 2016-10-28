@@ -27,10 +27,14 @@ exclude: [
   "LICENSE",
   "node_modules",
   "package.json",
-  "assets/scss",
+  "assets",
   "s3_website.yml",
   "README.md",
   "styleguide.md"
+]
+
+keep_files: [
+ "assets"
 ]
 
 gems: [jekyll-paginate]
