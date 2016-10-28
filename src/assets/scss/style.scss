@@ -1,19 +1,19 @@
-@import "bourbon";
-@import "../../../node_modules/normalize-scss/sass/normalize";
-@import "../../../node_modules/susy/sass/susy";
-@import "../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import  "normalize/import-now";
+@import  "bourbon";
+@import  "susy";
+@import  "breakpoint";
 
-@import "abstracts/variables";
-@import "base/media";
-@import "base/typography";
-@import "components/logo";
-@import "components/buttons";
-@import "layout/header";
-@import "layout/navigation";
-@import "components/pagination";
-@import "components/post-image";
-@import "layout/layout";
-@import "base/syntax-highlighting";
+// @import "abstracts/variables";
+// @import "base/media";
+// @import "base/typography";
+// @import "components/logo";
+// @import "components/buttons";
+// @import "layout/header";
+// @import "layout/navigation";
+// @import "components/pagination";
+// @import "components/post-image";
+// @import "layout/layout";
+// @import "base/syntax-highlighting";
 
 // body {
 //   margin: 0;
@@ -40,18 +40,22 @@ body:before {
     background-color: yellow;
     padding: 0.5em 1em;
     text-transform: uppercase;
-    font-family: $sans-serif;
+    //font-family: $sans-serif;
     z-index: 1000;
     /*    @include rotate(270deg);
         @include transform-origin(0, 0, 0);*/
 
-    @include breakpoint($baby-bear) {
-        content: "Baby Bear";
-    }
-    @include breakpoint($mama-bear) {
-        content: "Mama Bear";
-    }
-    @include breakpoint($papa-bear) {
-        content: "Papa Bear";
-    }
+    // @include breakpoint($baby-bear) {
+    //     content: "Baby Bear";
+    // }
+    // @include breakpoint($mama-bear) {
+    //     content: "Mama Bear";
+    // }
+    // @include breakpoint($papa-bear) {
+    //     content: "Papa Bear";
+    // }
+}
+
+body {
+    color: green;
 }
