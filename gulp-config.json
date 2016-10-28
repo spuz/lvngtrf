@@ -1,0 +1,24 @@
+{
+  "paths" : {
+    "source" : {
+      "root"  : "./src",
+      "js"    : "./src/assets/js",
+      "images": "./src/assets/images",
+      "css"   : "./src/assets/css",
+      "scss"  : "./src/assets/scss",
+      "templates" : {
+        "pages"   : "./src",
+        "posts"   : "./src/_posts",
+        "layouts" : "./src/_layouts",
+        "includes": "./src/_includes"
+      }
+    },
+    "public" : {
+      "root"  : "./dev",
+      "js"    : "./dev/assets/js",
+      "images": "./dev/assets/images",
+      "fonts" : "./dev/assets/fonts",
+      "css"   : "./dev/assets/css"
+    }
+  }
+}
