@@ -14,7 +14,7 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^2.0.0",
     "lazysizes": "^2.0.4",
-    "normalize-scss": "^4.0.3",
+    "normalize-scss": "^6.0.0",
     "support-for": "^1.0.3",
     "susy": "^2.2.12",
     "vinyl-buffer": "^1.0.0",
