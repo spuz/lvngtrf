@@ -6,13 +6,19 @@
   "devDependencies": {
     "breakpoint-sass": "^2.7.0",
     "browser-sync": "^2.11.1",
+    "browserify": "^13.1.0",
     "compass-mixins": "^0.12.7",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.2.0",
+    "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "lazysizes": "^2.0.4",
     "normalize-scss": "^4.0.3",
     "support-for": "^1.0.3",
-    "susy": "^2.2.12"
+    "susy": "^2.2.12",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
     "bourbon": "^4.2.7"
