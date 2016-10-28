@@ -14,7 +14,7 @@
 
 {% elsif page.is_post %}
 <figure class="figure">
-  <img class="figure__image" src="{{ page.image }}" srcset="{{ page.image }} 1x, {{ page.image2x }} 2x" alt="{{ page.alt }}" />
+  <img class="figure__image lazyload" data-zoomable="true" data-src="{{ page.image }}" data-srcset="{{ page.image }} 1x, {{ page.image2x }} 2x" alt="{{ page.alt }}" />
   <figcaption class="figure__caption">{{ page.caption }}</figcaption>
 </figure>
 
