@@ -11,3 +11,31 @@ alt:       "The feet of a sunbather"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi harum, veniam quis amet molestiae aperiam omnis repellat. Illum at adipisci provident nihil repellendus, debitis esse optio cumque! Possimus, nesciunt labore.
+
+<img src="//c1.staticflickr.com/1/723/21038510863_dde6d10a3e_n.jpg" class="js-zoom" />
+
+<div style="display: none;">
+<img
+sizes="(max-width: 1600px) 100vw, 1600px"
+srcset="
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_200.jpg 200w,
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_442.jpg 442w,
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_602.jpg 602w,
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_739.jpg 739w,
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_842.jpg 842w,
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_933.jpg 933w,
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_1004.jpg 1004w,
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_1085.jpg 1085w,
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_1153.jpg 1153w,
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_1218.jpg 1218w,
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_1279.jpg 1279w,
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_1340.jpg 1340w,
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_1396.jpg 1396w,
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_1448.jpg 1448w,
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_1506.jpg 1506w,
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_1555.jpg 1555w,
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_1598.jpg 1598w,
+/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_1600.jpg 1600w"
+src="/images/2016/07/21428880081_bc95b6c8b1_o_uohpd9_c_scale,w_1600.jpg"
+alt="" />
+</div>
