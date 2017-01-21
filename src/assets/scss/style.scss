@@ -59,3 +59,12 @@ body:before {
 body {
     color: green;
 }
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.js-zoom {
+    @include transition(all 100ms ease-in-out);
+}
