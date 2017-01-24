@@ -1,70 +1,53 @@
 var windowWidth = window.innerWidth
 var windowHeight = window.innerHeight;
 
-var naturalWidth = +Infinity;
-var naturalHeight = +Infinity;
-
-var zoomableImages = document.querySelectorAll('.js-zoom');
 
 var body = document.querySelector('body');
 var overlay = document.createElement('div');
-overlay.setAttribute('class', 'overlay');
+overlay.classList.add('overlay');
 
-function zoomImage() {
 
+
+
+var toogleImageZoom = function () {
+    if(!body.classList.contains('active-zoom') && !this.classList.contains('zoomableimage--zoomed')) {
+        var positionInfo = this.getBoundingClientRect();
+        var height = positionInfo.height;
+        var width = positionInfo.width;
+        var top = positionInfo.top;
+        var left = positionInfo.left;
+
+        var scaleX = windowWidth / width;
+        var scaleY = windowHeight / height;
+        var scale = Math.min(scaleX, scaleY) * .95;
+
+        var translateX = (-left + (windowWidth - width) / 2) / scale;
+        var translateY = (-top + (windowHeight - height) / 2) / scale;
+
+        this.style.transform = 'scale(' + scale + ') translate3d(' + translateX +'px, ' + translateY + 'px, 0)';
+
+        this.classList.add('zoomableimage--zoomed');
+        body.classList.add('active-zoom');
+        document.body.appendChild(overlay);
+    } else if (body.classList.contains('active-zoom') && this.classList.contains('zoomableimage--zoomed')) {
+        body.classList.remove('active-zoom');
+        document.body.removeChild(overlay);
+        this.style.transform = 'none';
+        this.classList.remove('zoomableimage--zoomed');
+    }
 }
 
-function unzoomImage() {
-
-}
+var zoomableImages = document.querySelectorAll('.js-zoom');
 
 for (var i=0; i<zoomableImages.length; i++) {
-    var zoomableImage = zoomableImages[i];
+    var image = zoomableImages[i];
 
-    zoomableImage.addEventListener('click', function() {
-        if (body.classList.contains('zoomed')) {
-
-            body.classList.remove('zoomed');
-            document.body.removeChild(overlay);
-            this.style.transform = 'none';
-            console.log('unzoom');
-
-        } else {
-
-            body.classList.add('zoomed');
-            document.body.appendChild(overlay);
-            var positionInfo = this.getBoundingClientRect();
-            var height = positionInfo.height;
-            var width = positionInfo.width;
-            var top = positionInfo.top;
-            var left = positionInfo.left;
-
-            var scaleX = windowWidth / width;
-            var scaleY = windowHeight / height;
-            var scale = Math.min(scaleX, scaleY);
-
-            var translateX = (-left + (windowWidth - width) / 2) / scale;
-            var translateY = (-top + (windowHeight - height) / 2) / scale;
-
-            console.log(scale, translateX, translateY);
-            this.style.transform = 'scale(' + scale + ') translate3d(' + translateX +'px, ' + translateY + 'px, 0)';
-            console.log('top: ' + top + ', left: ' + left);
-
-        }
-    })
+    (function(index) {
+        zoomableImages[index].addEventListener('click', toogleImageZoom, false);
+    })(i);
 }
 
 
-//window.addEventListener('keyup', onKeyUp);
 
 
 
-
-
-
-
-
-
-module.exports = function() {
-    console.log('moo!');
-};

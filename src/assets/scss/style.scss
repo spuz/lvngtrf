@@ -66,5 +66,29 @@ img {
 }
 
 .js-zoom {
-    @include transition(all 100ms ease-in-out);
+
+}
+
+.zoomableimage {
+    @include transition(all 300ms cubic-bezier(1, 0, 0, 1));
+    will-change: all;
+  &--zoomed {
+    position: relative;
+    z-index: 1000;
+  }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: deeppink;
+    z-index: 999;
+    opacity: 0;
+    @include transition(opacity 300ms cubic-bezier(1, 0, 0, 1));
+    .active-zoom & {
+      opacity: 1;
+    }
 }
