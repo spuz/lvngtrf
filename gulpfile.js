@@ -29,10 +29,11 @@ gulp.task('sass', function () {
     .pipe(sass({
         outputStyle: 'compressed',
         includePaths: [
-            'node_modules/susy/sass',
             'node_modules/breakpoint-sass/stylesheets',
+            'node_modules/normalize-scss/fork-versions/typey',
             'node_modules/support-for/sass',
-            'node_modules/normalize-scss/sass'
+            'node_modules/susy/sass',
+            'node_modules/typey/stylesheets'
         ].concat(bourbon)
     }).on('error', sass.logError))
     .pipe(size())

@@ -17,6 +17,7 @@
     "normalize-scss": "^6.0.0",
     "support-for": "^1.0.3",
     "susy": "^2.2.12",
+    "typey": "^1.0.3",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },

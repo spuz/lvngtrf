@@ -1,7 +1,21 @@
-@import  "normalize/import-now";
-@import  "bourbon";
-@import  "susy";
-@import  "breakpoint";
+// 1. Configuration and helpers
+@import
+  "abstracts/variables",
+  "abstracts/settings",
+  "abstracts/mixins";
+
+// 2. Vendors
+@import
+  "normalize",
+  "bourbon",
+  "susy",
+  "typey",
+  "breakpoint";
+
+
+// 3. Base stuff
+@import
+  "base/typography";
 
 // @import "abstracts/variables";
 // @import "base/media";
@@ -56,8 +70,25 @@ body:before {
     // }
 }
 
-body {
-    color: green;
+img {
+  max-width: 100%;
+}
+
+.overlay {
+  opacity: 0;
+    position: fixed;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    background-color: rgba(255,0,0,.25);
+    opacity: 0;
+    @include transition(opacity 2s);
+  .zoomed & {
+    opacity: 1;
+  }
 }
 
 img {
